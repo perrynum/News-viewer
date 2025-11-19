@@ -11,10 +11,11 @@ A minimal web app that retrieves **current headlines** and supports **keyword se
 ## Setup
 ```bash
 cd server
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env  # Add your API key
+# MAC：export PORT=5001
 python app.py
 ```
 Open http://localhost:5000

@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>RDI News Viewer</title>
+  <title>News Viewer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
-    <h1>RDI News Viewer</h1>
+    <h1>News Viewer</h1>
     <div class="controls">
-      <button id="btn-headlines">Current Headlines</button>
-      <form id="search-form">
-        <input type="text" id="search-input" placeholder="Search news (e.g., AI, Finland, economy)"/>
-        <button type="submit">Search</button>
+      <button id="btn-headlines" class="btn btn-primary">Current Headlines</button>
+
+      <form id="search-form" class="search">
+        <input type="text" id="search-input" class="input" placeholder="Search news (e.g., AI, Finland, economy)" aria-label="Search"/>
+        <button type="submit" class="btn">Search</button>
       </form>
-      <select id="country-select" title="Country">
+
+      <select id="country-select" title="Country" class="select">
         <option value="us">US</option>
         <option value="fi">Finland</option>
         <option value="gb">UK</option>
