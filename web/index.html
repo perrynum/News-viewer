@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>RDI News Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>RDI News Viewer</h1>
+    <div class="controls">
+      <button id="btn-headlines">Current Headlines</button>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search news (e.g., AI, Finland, economy)"/>
+        <button type="submit">Search</button>
+      </form>
+      <select id="country-select" title="Country">
+        <option value="us">US</option>
+        <option value="fi">Finland</option>
+        <option value="gb">UK</option>
+        <option value="de">Germany</option>
+        <option value="se">Sweden</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <div id="status" class="muted"></div>
+    <section id="results" class="grid"></section>
+  </main>
+  <footer>
+    <small>Powered by NewsAPI.org</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

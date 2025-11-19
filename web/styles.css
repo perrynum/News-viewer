@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background: #0b1220; color: #eaf1ff; margin: 0; padding: 1rem; }
+header { border-bottom: 1px solid #22304a; padding-bottom: 1rem; }
+.controls { display: flex; gap: .5rem; flex-wrap: wrap; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.card { background: #121a2b; border-radius: 12px; overflow: hidden; }
+.card img { width: 100%; height: 160px; object-fit: cover; }
+.card-content { padding: .8rem; }
